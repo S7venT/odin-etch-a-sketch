@@ -13,14 +13,16 @@
     <script src="main.js"></script>
     <h1>Etch-A-Sketch</h1>
     <div class="header">
-        <h6>Select the size</h6>
-        <button id="popup" class="btn btn-success">Select</button>
+        <h6>Select the size:</h6>
+        <!-- <button id="popup" class="btn btn-success">Select</button> -->
+        <input type="text" placeholder="size of Board" value=" " onchange="changeSize(this.value)"/>
+        <button  class="btn btn-success">Select</button>
     </div>
     <div class="box"></div>
     <div class="footer">
-        <button class="btn btn-dark">Black</button>
-        <button class="btn btn-warning">Random</button>
-        <button class="btn btn-primary">Reset</button>
+        <button class="btn btn-dark" onclick="setColor('black')">Black</button>
+        <button class="btn btn-warning" onclick="setColor('random')">Random</button>
+        <button class="btn btn-primary" onclick="resetBoard()">Reset</button>
     </div>
 </body>
 </html>
